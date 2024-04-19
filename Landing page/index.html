@@ -1,0 +1,79 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectraEasePay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/title.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="signup.html">SIGN UP</a></li>
+                    <li><a href="index.html">LOGIN</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Login</h1>
+    </section>
+
+    <!--login page content-->
+    <section class="log-in">
+      <div class="container1">
+        <div class="title">Login</div>
+        <div class="content">
+        <form name = "form" action=""  method="POST">
+            <div class="user-details1">
+              <div class="input-box1">
+                  <span class="details">User Name</span>
+                  <input type="text" id="user" placeholder="Enter user name" name="user" required >
+              </div>
+              
+              <div class="input-box1">
+                  <span class="details">Password</span>
+                  <input type="password" id="pass" placeholder="Enter your password"  name="pass" required>
+              </div>
+              
+              
+              <div class="button1">
+              <input type="submit" value="LOGIN" name = "submit">
+              </div>
+              <div class="button1">
+                  <input type="button" onclick="location.href= 'signup.php' " value="SIGN UP" >
+            </div>
+        </form>
+        </div>
+      </div>
+       
+  </section>
+
+    <!--footer-->
+    <section class="footer">
+       
+    
+        <p>&copy; 2024 ElectraEasePay |All Rights Reserved</p>
+    </section>
+    <!------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
