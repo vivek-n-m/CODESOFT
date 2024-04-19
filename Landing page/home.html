@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectraEasePay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/title.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="signup.html">SIGN UP</a></li>
+                    <li><a href="index.html">LOGIN</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Fastest And Secure Payment Method</h1>
+        <p>Unlock the power of seamless transactions with our cutting-edge online payment system.<br> Simplify your payments and experience the future of secure and effortless bill payment.</p>
+        
+    </div>
+    </section>
+
+    <!--Services-->
+    <section class="service">
+        <h1>Services We Offer</h1>
+        
+        <div class="row">
+            <div class="service-col">
+                <h3>QUICKPAY</h3>
+                <p>Instant payment method allowing for the smooth and easy payment of your home electricity bill</p>
+            </div>
+            <div class="service-col">
+                <h3>REGISTER COMPLAINT</h3>
+                <p>Reach us with any queries regarding any and every technical complaints regarding payment</p>
+            </div>
+            <div class="service-col">
+                <h3>COMPLAINT STATUS</h3>
+                <p>Check the current status of your registered complaint</p>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <section class="footer">
+     
+        <p>&copy; 2024 ElectraEasePay |All Rights Reserved</p>
+    </section>
+    <!------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>

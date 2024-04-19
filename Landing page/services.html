@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectraEasePay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/title.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="signup.html">SIGN UP</a></li>
+                    <li><a href="index.html">LOGIN</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Services</h1>
+    </section>
+
+    <!--services-->
+    <section class="service">
+        <h1>Services We Offer</h1>
+        
+        <div class="row">
+            <div class="service-col">
+                <h3>QUICKPAY</h3>
+                <p>Instant payment  is a method of exchanging money and processing payments,<br> allowing for almost immediate transfer of money between bank accounts,<br> instead of the more typical one to three business days.</p>
+            </div>
+            <div class="service-col">
+                <h3>REGISTER COMPLAINT</h3>
+                <p>Approach your payment service provider with your grievance and wait for at least 30 days.</p>
+            </div>
+            <div class="service-col">
+                <h3>COMPLAINT STATUS</h3>
+                <p>To check what will be the current stutus of your complaint.</p>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <section class="footer">
+        <p>&copy; 2024 ElectraEasePay |All Rights Reserved</p>
+    </section>
+    <!------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
